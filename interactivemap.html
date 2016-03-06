@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Duke Of Edinbourgh</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div id="topPan">
+  <img src="images/logo.png" style="position: absolute; width: 40%; left: 30%; top: 50px;">
+  <div id="topMenuPan">
+    <div id="topMenuLeftPan"></div>
+    <div id="topMenuMiddlePan">
+      <ul>
+
+        <li><a href="interactivemap.html">Map</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="grouproles.html">Group Roles</a></li>
+        <li><a href="slideshow.html">Interviews</a></li>
+      </ul>
+    </div>
+    <div id="topMenuRightPan"></div>
+  </div>
+</div>
+<div id="bodyPan">
+<img src="doephotos/map.jpg" width="600" height="350" alt="Route" usemap="#route">
+<img src="images/marker.png" style="position: absolute; left: 7%; top: 225px;" id="hover" onclick="Area('doephotos/bus1.jpg');">  
+<img src="images/marker.png" style="position: absolute; left: 12%; top: 210px;" id="hover" onclick="Area('doephotos/fence1.jpg');">  
+<img src="images/marker.png" style="position: absolute; left: 20%; top: 210px;" id="hover" onclick="Area('doephotos/carpark1.jpg');">  
+<img src="images/marker.png" style="position: absolute; left: 30%; top: 212px;" id="hover" onclick="Area('doephotos/road1.jpg');"> 
+<img src="images/marker.png" style="position: absolute; left: 48.5%; top: 230px;" id="hover" onclick="Area('url');"> 
+<img src="images/marker.png" style="position: absolute; left: 53%; top: 190px;" id="hover" onclick="Area('doephotos/bridge1.jpg');"> 
+<img src="images/marker.png" style="position: absolute; left: 55%; top: 150px;" id="hover" onclick="Area('doephotos/dam1.jpg');"> 
+<img src="images/marker.png" style="position: absolute; left: 75%; top: 88px;" id="hover" onclick="Area('doephotos/river1.jpg');">  
+<img src="images/marker.png" style="position: absolute; left: 74%; top: 60px;" id="hover" onclick="Area('doephotos/camp1.jpg');"> 
+<div id="Area" style="position: fixed; top: 100px; left: 25%; width: 50%; height: 500px; background: white; display: none; border: 3px solid black;">
+</div>
+<img class="Close" src="images/close.png" style="position: fixed; left: 72%; top: 105px; width: 2%; display: none;" id="hover" onclick="Close();">
+
+<script>
+function Area(url)
+{
+	$("#Area").fadeIn(1000);
+	$(".Close").fadeIn(1000);
+	document.getElementById("Area").innerHTML="<img style='position: absolute; top: 0px; left: 0%; width: 100%; height: 100%;' src='" + url + "'>";
+}
+function Close()
+{
+	$("#Area").fadeOut(1000);
+	$(".Close").fadeOut(1000);
+}
+</script>
+
+
+ 
+
+</html>

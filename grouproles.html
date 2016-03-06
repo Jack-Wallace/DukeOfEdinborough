@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Duke Of Edinbourgh</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<style>
+h1 {text-align:left;
+}
+p {text-align:left;}
+ul {text-align:left;}
+
+</style>
+</head>
+<body>
+<div id="topPan"><img src="images/logo.png" style="position: absolute; width: 40%; left: 30%; top: 50px;">
+  <div id="topMenuPan">
+    <div id="topMenuLeftPan"></div>
+    <div id="topMenuMiddlePan">
+      <ul>
+
+        <li><a href="interactivemap.html">Map</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="grouproles.html">Group Roles</a></li>
+        <li><a href="slideshow.html">Interviews</a></li>
+      </ul>
+    </div>
+    <div id="topMenuRightPan"></div>
+  </div>
+</div>
+<div id="bodyPan">
+<h1>Group Roles</h1>
+<hr>
+<P>There where four major roles that where involved in our group which where;</P>
+<ul>
+       <li>Photography</li>
+       <li>Navigation</li>
+       <li>Setting Up Camp</li>
+</ul>
+<H1>Photography</H1>
+<br>
+<p>This responsibility was shared by Megan, Matthew and Jack. They all used different device etc digital camera and an Ipod to capture images on the surrounding landscape each the time the group stopped to do that activity.</p>
+<br>
+<div id = "pic1"
+<tr>
+      <td><img src="images/image21.jpg" height = 150 width = 150 onclick = "Area('images/image21.jpg')"></td>
+      <td><img src="images/image22.jpg" height = 150 width = 150 onclick = "Area('images/image22.jpg')"></td>
+      <td><img src="images/image24.jpg" height = 150 width = 150 onclick = "Area('images/image24.jpg')"></td>
+</tr>
+</div>
+<H1>Navigation</H1>
+<br>
+<p>This was a major responsibility while we where on the expedition. We shared this responsibility between everyone in the group at different times during the expedition as we all had to know where we where on the map at all times.Below are some pictures of us </p>
+      <div id = "pic1">
+	  <tr>
+	  <td><img src="doephotos/map1.jpg" height = 150 width = 150 onclick = "Area('doephotos/map1.jpg)"></td>
+      <td><img src="doephotos/map2.jpg" height = 150 width = 150 onclick = "Area('doephotos/map2.jpg')"></td>
+      <td><img src="doephotos/map3.jpg" height = 150 width = 150 onclick = "Area('doephotos/map3.jpg')"></td>
+	  </div>
+	  </tr>
+	  <br>
+
+<H1>Setting Up Camp</H1>
+<br>
+<p> Setting up camp was the responsibility of Sean, Jake and Liam, while the other three members of the group prepared there evening meal. Then in the next morning 
+Matthew, Jack and Megan took down the tents and assigned parts of each tent to different members of the group. </p>
+<br>
+<tr>
+      <div id = "pic1">
+	  <tr>
+	  <td><img src="doephotos/camp2.jpg" height = 150 width = 150 onclick = "Area('doephotos/camp2.jpg')"></td>
+      <td><img src="doephotos/camp3.jpg" height = 150 width = 150 onclick = "Area('doephotos/camp3.jpg')"></td>
+      <td><img src="doephotos/camp4.jpg" height = 150 width = 150 onclick = "Area('doephotos/camp4.jpg')"></td>
+	  </tr>
+	  </div>
+<div id="Area" style="position: fixed; top: 100px; left: 25%; width: 50%; height: 500px; background: white; display: none; border: 3px solid black;">
+</div>
+<img class="Close" src="images/close.png" style="position: fixed; left: 72%; top: 105px; width: 2%; display: none;" id="hover" onclick="Close();">
+<script>
+function Area(url)
+{
+	$("#Area").fadeIn(1000);
+	$(".Close").fadeIn(1000);
+	document.getElementById("Area").innerHTML="<img style='position: absolute; top: 0px; left: 0%; width: 100%; height: 100%;' src='" + url + "'>";
+}
+function Close()
+{
+	$("#Area").fadeOut(1000);
+	$(".Close").fadeOut(1000);
+}
+</script> 
+          
+
+</div>
+</body>
+</html>
